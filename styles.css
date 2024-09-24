@@ -1,0 +1,334 @@
+/* General Styles */
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding :0 ;
+  width:fit-content; 
+  
+}
+
+img{
+  background: none;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  border-radius: -5;
+}
+
+.main-section {
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 40px;
+  /* z-index: 1; */
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+/* Content section */
+.content {
+  max-width: 700px;
+  color: white;
+}
+
+h1 {
+  padding-top: 40px;
+  font-size: 33px;
+  font-weight: bold;
+  padding-bottom: 0%;
+  font-family: 'Poppins';
+}
+
+p {
+  padding-top: 0%;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.p1{
+  font-size: 20px;
+  
+}
+
+.notify-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.notify-me input {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  max-width: 266px;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 20px
+}
+
+.notify-me button {
+  background-color: #fff;
+  color: #000;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  margin-left: 3px;
+  height: 33px;
+  margin-bottom: 10px;
+}
+
+/* Floating WhatsApp and Instagram Buttons */
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  left: 41px;
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  
+
+  
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(248, 248, 248, 0.2);
+  cursor: pointer;
+}
+
+i{
+  cursor: pointer;
+}
+
+.social-icons a.whatsapp {
+  background-color: #000000; /* WhatsApp green */
+}
+
+.social-icons a.instagram {
+  background-color: #000000; /* Instagram pink */
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* Get in touch button - Bottom Right */
+.get-in-touch {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #232628;
+  color: white;
+  padding: 6px 40px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.get-in-touch a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.get-in-touch i {
+  font-size: 30px;
+  margin-right: 8px;
+}
+ /* Get in touch button - Bottom Right */
+/* Get in touch button - Bottom Right */
+/* Get in touch button - Bottom Right */
+
+
+
+
+.error-message {
+  color: red;
+  font-size: 15px;
+  margin-top: 10px;
+  display: none; /* Hide by default */
+}
+.success-message {
+  color: rgb(30, 240, 41); /* Ensure the color is green */
+  font-size: 15px;
+
+  margin-top: 10px;
+  display: none; /* Initially hidden */
+}
+
+.whatsapp-icon {
+  display: inline-block;
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  font-size: 40px; /* Icon size */
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.whatsapp-icon:hover {
+  background-color: #20b659; /* Slightly darker green on hover */
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.email-input {
+  flex: 1;
+  border: none;
+  padding: 9px 20px;
+  outline: none;
+  font-size: 16px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: transparent;
+  color: white;
+  height: 30px;
+  padding-left: 50px;
+}
+
+.email-input::placeholder {
+  color: #b1b1b1;
+}
+
+.email-button {
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.email-button:hover {
+  background-color: #ddd;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .content {
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .email-input {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .email-button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .email-container {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .email-input, .email-button {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .social-icons {
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .get-in-touch {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  .email-input {
+    font-size: 12px;
+  }
+  
+  .email-button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}
+/* Logo Styles */
+.logo-container {
+  position: fixed; /* Keeps the logo fixed at the top left corner even when scrolling */
+  top: 10px;
+  left: 20px;
+  z-index: 10; /* Ensures the logo is above other content */
+}
+
+.logo-container img {
+  height: 132px; /* Adjust the size of your logo */
+  width: auto;
+  padding-left: 0;
+  position: relative;  
+}
+
